@@ -20,13 +20,15 @@
     <module>webapp</module>
   </modules>
 
- <distributionManagement>
-           <site>
-      <id>site-server</id>
-      <name>Test Project Site</name>
-      <url>file:///tmp/maven-project-site</url>
-    </site>
- </distributionManagement> 
+
+         <distributionManagement>
+        <repository>
+            <id>my-repo</id>
+            <name>My Repository</name>
+            <url>http://example.com/repository</url>
+        </repository>
+    </distributionManagement>
+
   <build>
     <plugins>
       <plugin>
