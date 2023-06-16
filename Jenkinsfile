@@ -20,7 +20,7 @@ pipeline
             stage('excute maven') {
                   steps {
                         sh 'mvn clean'
-                       sh  'mvn deploy -DaltDeploymentRepository=siri::default::http://localhost:8081/repository'
+                      
 
                         
                         }
