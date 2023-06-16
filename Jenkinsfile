@@ -5,16 +5,16 @@ pipeline
           stage('delete old repo') 
                {
                  steps {
-                        sh 'ssh sirisha@34.28.163.80 rm -rf siri'
-                        sh 'ssh sirisha@34.28.163.80 ls -la'
+                        sh 'rm -rf siri'
+                        sh 'ls -la'
                         }
                }
     
            stage('clone')
                {
                 steps {
-                      sh 'ssh sirisha@34.28.163.80 git clone https://github.com/bathinasirisha/learnings.git'
-                      sh 'ssh sirisha@34.28.163.80 ls -la'
+                      sh 'git clone https://github.com/bathinasirisha/learnings.git'
+                      sh 'ls -la'
                       }
                }
             stage('excute maven') {
